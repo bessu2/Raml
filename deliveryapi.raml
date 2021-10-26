@@ -95,7 +95,7 @@ protocols: [http,https]
           application/json:
             example:
               {
-                meg: successfully fetch
+                meg: successfully retrived
               }
       404:
         body:
@@ -109,6 +109,8 @@ protocols: [http,https]
     description: update delivery and customer account 
     queryParameters:
       updatename:
+        type: string
+
   /{deliveryid}:
     get:
 /Customer:
