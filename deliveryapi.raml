@@ -128,7 +128,7 @@ protocols: [http,https]
         required: true
     body:
       application/json:
-        example:
+        example: !include example/customerexample.raml
          
     responses:
       201:
@@ -157,11 +157,8 @@ protocols: [http,https]
       description: fetch customer id
       body:
         application/json:
-          example:
-            {
-               "username" : "jason",
-              "e-mailadd" : "jason@gmail.com"
-            }
+          example: !include example/customerexample.raml 
+           
       responses:
         201:
           body:
