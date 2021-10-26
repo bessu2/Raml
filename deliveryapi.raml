@@ -4,7 +4,10 @@ protocols: [http,https]
 /Deliver:
   post:
     description: create an account for deliver service
-    
+    queryParameters:
+      custname:
+        type: string
+        
   get:
   put:
   /{deliveryid}:
