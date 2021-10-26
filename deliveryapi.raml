@@ -1,7 +1,6 @@
 #%RAML 1.0
 title: DeliveryApi.
 protocols: [http,https]
-
 /Delivery:
   post:
     description: create an account for deliver service
@@ -65,6 +64,11 @@ protocols: [http,https]
               {
                 meg: account created successfully
               }
+      404:
+        body:
+          application/json:
+            example:
+              
   get:
     description: fetch customer account
     body:
