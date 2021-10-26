@@ -97,7 +97,13 @@ protocols: [http,https]
               {
                 meg: successfull
               }
-              
+      404:
+        body:
+          application/json:
+            example:
+              {
+                meg: unable to fetch
+              }        
     
   put:
     description: 
