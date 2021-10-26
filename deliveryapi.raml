@@ -2,12 +2,13 @@
 title: DeliveryApi.
 protocols: [http,https]
 types:
-  deliverydata
+  delivdata: !include data file/deliverydataType.raml
 traits:
   ErrorResponce: !include trait.raml
 /Delivery:
   post:
     description: create an account for deliver service
+  
    
     body:
       application/json:
