@@ -68,7 +68,9 @@ protocols: [http,https]
         body:
           application/json:
             example:
-              
+              {
+                meg: unable to creat account
+              }
   get:
     description: fetch customer account
     body:
@@ -87,6 +89,10 @@ protocols: [http,https]
                 "unitprice" : 411.50
 
           }
+    responses:
+      201:
+        body:
+          
     
   put:
   /{deliveryid}:
