@@ -133,11 +133,18 @@ protocols: [http,https]
               {
                 meg : update successfull
               }
-      
+      404:
+        body:
+          application/json:
+            example:
+              {
+                meg : unable to update
+              }
 
 
   /{deliveryid}:
     get:
+      
 /Customer:
   post:
   get:
