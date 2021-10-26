@@ -2,7 +2,7 @@
 title: DeliveryApi.
 protocols: [http,https]
 traits:
-  ErrorResponce: !
+  ErrorResponce: !include trait.raml
 /Delivery:
   post:
     description: create an account for deliver service
@@ -53,13 +53,8 @@ traits:
               {
                 meg: account created successfully
               }
-      404:
-        body:
-          application/json:
-            example:
-              {
-                meg: unable to creat account
-              }
+  is:
+    - ErrorResponce
   get:
     description: fetch customer account
     body:
@@ -74,13 +69,8 @@ traits:
               {
                 meg: successfully retrived
               }
-      404:
-        body:
-          application/json:
-            example:
-              {
-                meg: unable to retrived info
-              }        
+    
+  
     
   put:
     description: update delivery and customer account 
