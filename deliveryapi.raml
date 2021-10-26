@@ -125,7 +125,15 @@ protocols: [http,https]
             "updatetime" : 11:15 am ,
             "deliverymanid" : 12344
           }
-    
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              {
+                meg : update successfull
+              }
+      
 
 
   /{deliveryid}:
