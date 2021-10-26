@@ -56,7 +56,14 @@ protocols: [http,https]
 
             }
           ]
-      
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              {
+                meg: account created successfully
+              }
   get:
   put:
   /{deliveryid}:
