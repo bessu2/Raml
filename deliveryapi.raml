@@ -173,11 +173,14 @@ protocols: [http,https]
           application/json:
             example:
               {
-                "meg" : userid not created
+                meg : userid not created
               }
       500:
         body:
           application/json:
-            
+            example:
+              {
+                meg : server not responding
+              }
   /{customerid}:
     get:
