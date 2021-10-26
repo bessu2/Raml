@@ -99,13 +99,8 @@ traits:
               {
                 meg : update successfull
               }
-      404:
-        body:
-          application/json:
-            example:
-              {
-                meg : unable to update
-              }
+    is:
+      - ErrorResponce 
 
 /Customer:
   post:
@@ -129,20 +124,8 @@ traits:
               {
                 "userid" : 12345
               }
-      404:
-        body:
-          application/json:
-            example:
-              {
-                meg : userid not created
-              }
-      500:
-        body:
-          application/json:
-            example:
-              {
-                meg : server not responding
-              }
+  is:
+    - ErrorResponce
   /{customerid}:
     get:
       description: fetch customer id
