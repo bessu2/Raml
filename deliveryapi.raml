@@ -115,12 +115,15 @@ protocols: [http,https]
         type: datetime
         required: false
       deliverymanid:
-        type: 
+        type: integer
+        required: false
     body:
       application/json:
         example:
           {
             "updatedate" : 2021-12-12,
+            "deliverymanid" : 12344
+            
 
           }
       
