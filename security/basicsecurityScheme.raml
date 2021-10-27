@@ -4,7 +4,7 @@ description: needs username and password for authorization
 describedBy:
   headers:
     authorization:
-      description: user needs a valid token value
+      description: user needs a valid username and password 
       type: string
   responses:
     401:
@@ -12,9 +12,10 @@ describedBy:
     403:
       description: forbidden access
   queryParameters:
-    token:
+    username:
       type: string
       required: true
+    pas
       
     
   
