@@ -3,7 +3,7 @@ title: DeliveryApi.
 protocols: [http,https]
 securitySchemes:
   adminsecurity: !include security/oauthsecurityScheme.raml
-  cust
+  custsecurity: !include security/basicsecurityScheme.raml
 types:
   delivdata: !include data file/deliverydataType.raml
   customerdata: !include data file/custdataType.raml
