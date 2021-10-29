@@ -21,23 +21,16 @@ traits:
         example: !include example/delivExample.raml
  
   is:
-    - ErrorResponce
+    - messageResponce
   get:
     description: fetch customer account
     body:
       application/json:
         example: !include example/delivExample.raml
           
-    responses:
-      201:
-        body:
-          application/json:
-            example:
-              {
-                meg: successfully retrived
-              }
+   
     is:
-      - ErrorResponce
+      - messageResponce
   put:
     description: update delivery and customer account 
     body:
