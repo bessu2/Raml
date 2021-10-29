@@ -20,7 +20,13 @@ traits:
       application/json:
         example: !include example/delivExample.raml
     responses:
-      
+      201:
+       body:
+         application/json:
+        example:
+          {
+        meg: created successfully
+          } 
   is:
     - ErrorResponce
   get:
