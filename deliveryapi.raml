@@ -113,5 +113,10 @@ traits:
 /deliveryman:
   get:
     responses:
-      20
+      200:
+        body:
+          application/json:
+            example: !include example/customerexample.raml
+      
+              
       
