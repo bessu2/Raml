@@ -16,24 +16,21 @@ uses:
     body:
       application/json:
         example: !include example/AdmiDelivExample.raml
-          
     is:
-      - messageResponce
+      - lib.messageResponce
   put:
     description: update delivery and customer account 
     body:
       application/json:
         example: !include example/putexample.raml
     is:
-      - messageResponce 
-
+      - lib.messageResponce 
 /Customer:
   post:
     description: creat a new customer account for delivery
     body:
       application/json:
         example: !include example/customerexample.raml
-         
     responses:
       201:
         body:
@@ -43,14 +40,13 @@ uses:
                 "userid" : 12345
               }
   is:
-    - messageResponce
+    - lib.messageResponce
   /{customerid}:
     get:
       description: fetch customer id
       body:
         application/json:
           example: !include example/customerexample.raml 
-           
       responses:
         201:
           body:
@@ -60,7 +56,7 @@ uses:
                   userid : 12345
                 }
     is:
-      - messageResponce      
+      - lib.messageResponce      
 /deliveryman:
   get:
     responses:
@@ -68,7 +64,6 @@ uses:
         body:
           application/json:
             example: !include example/delivermanexample.raml
-            
     is:
       - messageResponce        
               
