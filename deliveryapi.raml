@@ -61,7 +61,7 @@ traits:
                 "userid" : 12345
               }
   is:
-    - ErroResponce
+    - messageResponce
   /{customerid}:
     get:
       description: fetch customer id
@@ -78,7 +78,7 @@ traits:
                   userid : 12345
                 }
     is:
-      - ErrorResponce      
+      - messageResponce      
 /deliveryman:
   get:
     responses:
@@ -88,7 +88,7 @@ traits:
             example: !include example/delivermanexample.raml
             
     is:
-      - ErrorResponce        
+      - messageResponce        
               
               
       
