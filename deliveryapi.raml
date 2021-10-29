@@ -1,15 +1,7 @@
 #%RAML 1.0
 title: DeliveryApi.
 protocols: [http,https]
-securitySchemes:
-  adminsecurity: !include security/oauthsecurityScheme.raml
-  custsecurity: !include security/basicsecurityScheme.raml
-types:
-  delivdata: !include data file/deliverydataType.raml
-  customerdata: !include data file/custdataType.raml
-  adminputdata: !include data file/adminPutdataType.raml
-traits:
-  messageResponce: !include trait.raml
+
 /admin:
   post:
     description: create an account for deliver service
