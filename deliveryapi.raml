@@ -9,7 +9,7 @@ types:
   customerdata: !include data file/custdataType.raml
   adminputdata: !include data file/adminPutdataType.raml
 resourceTypes:
-  messageR
+  messageResource: !include messageResourceType.raml
 traits:
   ErrorResponce: !include trait.raml
 /admin:
@@ -21,9 +21,7 @@ traits:
         example: !include example/delivExample.raml
          
     responses:
-      201:
-        body:
-          application/json:
+      
             example: !include messageResourceType.raml
              
   is:
