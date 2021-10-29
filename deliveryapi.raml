@@ -22,10 +22,8 @@ traits:
       201:
         body:
           application/json:
-            example:
-              {
-                meg: account created successfully
-              }
+            example: !include messageResourceType.raml
+             
   is:
     - ErrorResponce
   get:
